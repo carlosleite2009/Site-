@@ -21,7 +21,19 @@ def criar_tabela():
                 id INT AUTO_INCREMENT PRIMARY KEY,
                 nome VARCHAR(150) NOT NULL,
                 email VARCHAR(150) NOT NULL UNIQUE,
+                login VARCHAR(80) NOT NULL UNIQUE,
                 senha VARCHAR(255) NOT NULL
+            )
+        """)
+
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS solicitacoes (
+                id INT AUTO_INCREMENT PRIMARY KEY,
+                nome VARCHAR(150) NOT NULL,
+                titulo VARCHAR(200) NOT NULL,
+                descricao TEXT NOT NULL,
+                status VARCHAR(50) NOT NULL DEFAULT 'Pendente',
+                criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
             )
         """)
 
