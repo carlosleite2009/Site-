@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sistema de Registro de Solicitações</title>
+<style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, sans-serif;
+}
+body {
+background: #ffffff;
+min-height: 100vh;
+}
+header {
+background: white;
+padding: 25px 8%;
+border-bottom: 1px solid #e0e0e0;
+}
+header h1 {
+color: #16833b;
+font-size: 27px;
+}
+main {
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 80vh;
+padding: 30px 20px;
+}
+.container {
+background: white;
+width: 850px;
+max-width: 100%;
+display: flex;
+border-radius: 8px;
+box-shadow: 0 3px 18px #00000012;
+overflow: hidden;
+}
+.login, .registro {
+width: 50%;
+padding: 55px 40px;
+}
+.login {
+border-right: 1px solid #eeeeee;
+}
+h2 {
+color: #16833b;
+margin-bottom: 15px;
+font-size: 25px;
+}
+p {
+color: #777777;
+margin-bottom: 25px;
+line-height: 1.5;
+}
+label {
+display: block;
+margin-bottom: 8px;
+color: #444444;
+font-size: 14px;
+}
+input {
+width: 100%;
+padding: 14px;
+margin-bottom: 20px;
+border: 1px solid #cccccc;
+border-radius: 4px;
+outline: none;
+font-size: 15px;
+}
+input:focus {
+border-color: #16833b;
+}
+button {
+width: 100%;
+padding: 14px;
+background: #16833b;
+color: white;
+border: none;
+border-radius: 4px;
+font-size: 16px;
+cursor: pointer;
+transition: 0.3s;
+}
+button:hover {
+background: #10652d;
+}
+.registro {
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+}
+.registro p {
+margin-top: 10px;
+}
+@media (max-width: 650px) {
+.container {
+flex-direction: column;
+}
+.login, .registro {
+width: 100%;
+padding: 35px 25px;
+}
+.login {
+border-right: none;
+border-bottom: 1px solid #eeeeee;
+}
+header h1 {
+font-size: 22px;
+}
+}
+a {
+margin-inline: 50px;
+border-radius: 10px;
+padding: 10px;
+text-decoration: none;
+color: white;
+background-color: #16833b;
+}
+a:hover {
+background: #10652d;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Sistema de Registro de Solicitações</h1>
+</header>
+<main>
+<div class="container">
+<section class="login">
+<h2>Login</h2>
+<p>Acesse sua conta</p>
+
+<form id="loginForm">
+<label for="usuario">Login</label>
+<input
+type="text"
+id="usuario"
+placeholder="Digite seu login"
+autocomplete="off"
+required
+>
+<label for="senha">Senha</label>
+<input
+type="password"
+id="senha"
+placeholder="Digite sua senha"
+autocomplete="off"
+required
+>
+
+<!-- X: Botão necessário para enviar o formulário de login -->
+<button type="submit">Entrar</button>
+</form>
+</section>
+<section class="registro">
+<h2>Não tem uma conta?</h2>
+<p>
+Registre sua conta aqui e tenha acesso
+à sua área de usuário.
+</p>
+<a href="index.html" class="botao-registrar">
+Registrar
+</a>
+</section>
+</div>
+</main>
+
+<!-- X: Carrega o JavaScript da Equipe 5 -->
+<script src="script.js"></script>
+</body>
+</html>

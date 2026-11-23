@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cadastro - Sistema de Registro</title>
+<style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, sans-serif;
+}
+body {
+background: #ffffff;
+min-height: 100vh;
+}
+header {
+padding: 25px 8%;
+border-bottom: 1px solid #ddd;
+}
+header h1 {
+color: #16833b;
+font-size: 27px;
+}
+main {
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 40px 20px;
+}
+.cadastro {
+background: white;
+width: 450px;
+max-width: 100%;
+padding: 40px;
+border-radius: 8px;
+box-shadow: 0 3px 18px #00000012;
+}
+h2 {
+color: #16833b;
+margin-bottom: 12px;
+}
+p {
+color: #777;
+margin-bottom: 25px;
+}
+label {
+display: block;
+margin-bottom: 8px;
+color: #444;
+}
+input {
+width: 100%;
+padding: 13px;
+margin-bottom: 20px;
+border: 1px solid #ccc;
+border-radius: 4px;
+font-size: 15px;
+}
+input:focus {
+outline: none;
+border-color: #16833b;
+}
+button {
+width: 100%;
+padding: 14px;
+background: #16833b;
+color: white;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-size: 16px;
+}
+button:hover {
+background: #10652d;
+}
+form {
+margin-bottom: 15px;
+}
+a {
+border-radius: 10px;
+padding: 10px;
+text-decoration: none;
+color: white;
+background-color: #16833b;
+cursor: pointer;
+}
+a:hover {
+background: #10652d;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Sistema de Registro de Solicitações</h1>
+</header>
+<main>
+<div class="cadastro">
+<h2>Criar uma conta</h2>
+<p>Preencha os dados para realizar seu cadastro.</p>
+<form id="cadastroForm">
+<label for="nome">Nome completo</label>
+<input type="text" id="nome"
+placeholder="Digite seu nome" required>
+<label for="email">E-mail</label>
+<input type="email" id="email"
+placeholder="Digite seu e-mail" required>
+<label for="usuario">Nome de usuário</label>
+<input type="text" id="usuario"
+placeholder="Crie um usuário" required>
+<label for="senha">Senha</label>
+<input type="password" id="senha"
+placeholder="Crie uma senha" required>
+<label for="confirmar">Confirmar senha</label>
+<input type="password" id="confirmar"
+placeholder="Confirme sua senha" required>
+<button type="submit">Cadastrar</button>
+</form>
+
+<a href="index2.html">Página inicial</a>
+</div>
+</main>
+
+<!-- X: Carrega o JavaScript da Equipe 5 -->
+<script src="script.js"></script>
+</body>
+</html>

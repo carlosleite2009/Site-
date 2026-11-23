@@ -1,0 +1,26 @@
+ATUALIZAÇÕES REALIZADAS — EQUIPE 5 (JAVASCRIPT E INTEGRAÇÃO)
+
+Foram feitas algumas correções nos arquivos HTML para preparar a integração com o JavaScript.
+
+1. Tela de Login (index2.html)
+
+- Adicionado o botão "Entrar" dentro do formulário.
+- Adicionada a conexão com o arquivo script.js.
+- Mantido o link para a página de cadastro (index.html).
+
+2. Tela de Cadastro (index.html)
+
+- Removida uma tag HTML sobrando ("</a>").
+- Corrigido o link para voltar à página de login (index2.html).
+- Adicionada a conexão com o arquivo script.js.
+
+3. JavaScript (script.js)
+
+- Mantido o código de validação do cadastro e login.
+- Mantida a verificação de campos vazios.
+- Mantida a confirmação das senhas.
+- Mantida a preparação para envio dos dados ao Python.
+
+IMPORTANTE: A integração com o Backend ainda depende das rotas que serão disponibilizadas pela Equipe 3.
+
+O visual original das páginas foi preservado. As alterações foram feitas apenas para corrigir e preparar o funcionamento dos formulários.
