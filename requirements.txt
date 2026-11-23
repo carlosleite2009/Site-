@@ -1,1 +1,5 @@
-Flask\nflask-cors\ngunicorn\nmysql-connector-python\n
+
+Flask
+flask-cors
+gunicorn
+mysql-connector-python
